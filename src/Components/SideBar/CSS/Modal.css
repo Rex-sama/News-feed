@@ -1,0 +1,114 @@
+.feedback-modal {
+  position: fixed;
+  background: rgb(230, 227, 227);
+  width: 40%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  animation: slide 1s forwards;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+}
+.feedback-modal :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 10px;
+}
+.feedback-modal :nth-child(2) {
+  font-size: 13px;
+  margin: 0;
+}
+
+.feedback-form :nth-child(1) {
+  font-size: 14px;
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+
+.feedback-form label {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form input {
+  height: 37px;
+  font-size: 16px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.feedback-form textarea {
+  width: 300px;
+  height: 70px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+  font-size: 16px;
+  resize: none;
+}
+#feedback-button {
+  height: auto;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(3, 70, 3);
+  background-color: rgba(2, 255, 129, 0.767);
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: -40px;
+  }
+  25% {
+    margin-left: -30px;
+  }
+  75% {
+    margin-left: -30px;
+  }
+  100% {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .feedback-modal {
+    position: absolute;
+    top: 22%;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+
+    transition: 0.5s;
+  }
+
+  @keyframes slide {
+    0% {
+      margin-top: 490px;
+    }
+    25% {
+      margin-top: 510px;
+    }
+    75% {
+      margin-top: 510px;
+    }
+    100% {
+      margin-top: 510px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.main-row {
+  background-color: rgb(245, 243, 243);
+  width: 100%;
+  padding-top: 50px;
+}
+.main-column {
+  background-color: rgb(245, 243, 243);
+  width: 100%;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-row {
+    width: 100%;
+  }
+  .main-column {
+    width: 100%;
+    padding: 20px;
+  }
+}

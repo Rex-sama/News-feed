@@ -1,0 +1,37 @@
+.profile {
+  display: flex;
+  background-color: azure;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+  padding: 10px;
+  width: 80%;
+  margin: 60px auto 0px auto;
+  height: auto;
+}
+.profile img {
+  margin: 0;
+  padding: 0;
+}
+.profile-info {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+.profile-info h3 {
+  margin: 0;
+  padding: 0;
+}
+.profile-info p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width) {
+  .profile {
+    display: block;
+    background-color: azure;
+    width: 30%;
+    margin: 0px auto 0px auto;
+    height: auto;
+  }
+}

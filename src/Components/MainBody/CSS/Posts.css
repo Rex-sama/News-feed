@@ -1,0 +1,215 @@
+.posts-row {
+  width: 100%;
+  height: 100%;
+}
+.post-row-item {
+  display: flex;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: rgb(245, 243, 243);
+  width: 800px;
+  padding-left: 100px;
+  cursor: pointer;
+}
+.list-group-item-row {
+  height: auto;
+  display: flex;
+  width: 800px !important;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+}
+.row-title {
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+}
+.row-title :nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  width: 600px;
+  height: 30px;
+  overflow: hidden;
+  margin: 0;
+}
+.row-title :nth-child(2) {
+  text-align: left;
+  margin: 0;
+}
+.list-group-item-row + button {
+  height: 40px;
+  text-align: center;
+  width: 1px;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  color: red;
+  margin: 10px 0px 0px 10px;
+  padding: 0px 25px 10px 15px;
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+  font-size: 25px;
+}
+
+.posts-column {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  background-color: rgb(245, 243, 243);
+  padding: 10px;
+  margin-left: 50px;
+  width: 80%;
+}
+
+.post-column-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 8px 5px #b1afaf;
+  text-align: center;
+  padding: 0px 12px;
+  height: 230px;
+  width: 270px;
+  cursor: pointer;
+}
+.post-column-item button {
+  border: none;
+  color: red;
+  background-color: transparent;
+  float: right;
+  font-size: 20px;
+  margin: 0;
+}
+
+.list-group-item-column {
+  margin: 20px 0px;
+  padding: 0;
+}
+.list-group-item-column :nth-child(1) {
+  height: 48px;
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  margin: 0;
+}
+.list-group-item-column :nth-child(2) {
+  width: 100%;
+  margin: 0;
+  padding: 3px;
+}
+.list-group-item-column img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .posts-row {
+    width: 100%;
+    height: 100%;
+  }
+  .post-row-item {
+    display: flex;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+  }
+  .list-group-item-row {
+    height: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+
+  .posts-column {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding-bottom: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .post-column-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0;
+    height: 230px;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 691px) {
+  .posts-row {
+    width: 100%;
+    height: 100%;
+  }
+  .post-row-item {
+    display: flex;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    padding-right: 100px;
+  }
+  .list-group-item-row {
+    height: auto;
+    width: 100px;
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+  .row-title {
+    margin: 0px 0px 0px 10px;
+    padding: 0;
+  }
+  .row-title :nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    width: 600px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .row-title :nth-child(2) {
+    text-align: left;
+    margin: 0;
+  }
+  .list-group-item-row + button {
+    height: 40px;
+    text-align: center;
+
+    width: 1px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    color: red;
+    margin: 10px 0px 0px 10px;
+    padding: 0px 25px 10px 15px;
+    box-shadow: 5px 5px 8px 5px #b1afaf;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .posts-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posts-column {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
